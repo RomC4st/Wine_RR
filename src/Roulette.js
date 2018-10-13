@@ -34,7 +34,7 @@ class Roulette extends Component{
     return(
         <div><button className='roulette'onClick={this.handleclick1}></button></div>
 
-    )}; }
+    )} }
 
 }
 

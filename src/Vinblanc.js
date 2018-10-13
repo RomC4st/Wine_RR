@@ -16,70 +16,82 @@ class Vinblanc extends Component{
     
           }
           handleclick1 = () => {
+            require('./Hidden.css');
             this.setState(this.state.initialStatex);
             this.setState({a:!this.state.a});
-            fetch( `http://lcboapi.com/products?q=white+wine+soft+bottle&access_key=MDoyNjlmZmU0OC1jNjUxLTExZTgtOWY5Mi0yYjJmNjhlYmVlM2M6bERDcURrS3ZtekVLWU1RYzBQQ2dWdEx6dGRlcjl3RnVhemlm`)
+            fetch( `http://lcboapi.com/products?q=white+wine+sweet&access_key=MDoyNjlmZmU0OC1jNjUxLTExZTgtOWY5Mi0yYjJmNjhlYmVlM2M6bERDcURrS3ZtekVLWU1RYzBQQ2dWdEx6dGRlcjl3RnVhemlm`)
             .then(res => res.json())
-            .then((json) => {this.setState({isLoaded: true,items: json.result });});  }
+            .then((json) => {this.setState({isLoaded: true,items: json.result[0], });});  }
       
           handleclick2 = () => {
+            require('./Hidden.css');
             this.setState(this.state.initialStatey);
             this.setState({b:!this.state.b});
             fetch( `http://lcboapi.com/products?q=white+wine+dry+bottle&access_key=MDoyNjlmZmU0OC1jNjUxLTExZTgtOWY5Mi0yYjJmNjhlYmVlM2M6bERDcURrS3ZtekVLWU1RYzBQQ2dWdEx6dGRlcjl3RnVhemlm`)
             .then(res => res.json())
-            .then((json) => {this.setState({isLoaded: true,items: json.result});});  }
+            .then((json) => {this.setState({isLoaded: true,items: json.result[0],});});  }
       
           handleclick3 = () => {
+            require('./Hidden.css');
             this.setState(this.state.initialStatez);
             this.setState({c:!this.state.c});
             fetch( `http://lcboapi.com/products?q=white+wine+extra_dry+bottle&access_key=MDoyNjlmZmU0OC1jNjUxLTExZTgtOWY5Mi0yYjJmNjhlYmVlM2M6bERDcURrS3ZtekVLWU1RYzBQQ2dWdEx6dGRlcjl3RnVhemlm`)
             .then(res => res.json())
-            .then((json) => { this.setState({isLoaded: true,items: json.result });});  }   
+            .then((json) => { this.setState({isLoaded: true,items: json.result[0], });});  }   
 
             handleclick4 = () => {
+                require('./Hidden.css');
                 fetch( `http://lcboapi.com/products?q=white+wine+sweet+riesling&access_key=MDoyNjlmZmU0OC1jNjUxLTExZTgtOWY5Mi0yYjJmNjhlYmVlM2M6bERDcURrS3ZtekVLWU1RYzBQQ2dWdEx6dGRlcjl3RnVhemlm`)
                 .then(res => res.json())
-                .then((json) => {this.setState({isLoaded: true, items: json.result });});  }  
+                .then((json) => {this.setState({isLoaded: true, items: json.result[0],});});  }  
           
               handleclick5 = () => {
+                require('./Hidden.css');
                 fetch( `http://lcboapi.com/products?q=white+wine+dry+sauvignon&access_key=MDoyNjlmZmU0OC1jNjUxLTExZTgtOWY5Mi0yYjJmNjhlYmVlM2M6bERDcURrS3ZtekVLWU1RYzBQQ2dWdEx6dGRlcjl3RnVhemlm`)
                 .then(res => res.json())
-                .then((json) => {this.setState({isLoaded: true,items: json.result});});  }    
+                .then((json) => {this.setState({isLoaded: true,items: json.result[0],});});  }    
                        
               handleclick6 = () => {
+                require('./Hidden.css');
                 fetch( `http://lcboapi.com/products?q=white+wine+dry+canada&access_key=MDoyNjlmZmU0OC1jNjUxLTExZTgtOWY5Mi0yYjJmNjhlYmVlM2M6bERDcURrS3ZtekVLWU1RYzBQQ2dWdEx6dGRlcjl3RnVhemlm`)
                 .then(res => res.json())
-                .then((json) => {this.setState({isLoaded: true,items: json.result});});  }    
+                .then((json) => {this.setState({isLoaded: true,items: json.result[0],});});  }    
           
               handleclick7 = () => {
+                require('./Hidden.css');
                 fetch( `http://lcboapi.com/products?q=red+wine+france+sauvignon&access_key=MDoyNjlmZmU0OC1jNjUxLTExZTgtOWY5Mi0yYjJmNjhlYmVlM2M6bERDcURrS3ZtekVLWU1RYzBQQ2dWdEx6dGRlcjl3RnVhemlm`)
                 .then(res => res.json())
-                .then((json) => {this.setState({isLoaded: true,items: json.result});});  }  
+                .then((json) => {this.setState({isLoaded: true,items: json.result[0],});});  }  
           
               handleclick8 = () => {
+                require('./Hidden.css');
                 fetch( `http://lcboapi.com/products?q=red+wine+france+pinot_noir&access_key=MDoyNjlmZmU0OC1jNjUxLTExZTgtOWY5Mi0yYjJmNjhlYmVlM2M6bERDcURrS3ZtekVLWU1RYzBQQ2dWdEx6dGRlcjl3RnVhemlm`)
                 .then(res => res.json())
-                .then((json) => {this.setState({isLoaded: true,items: json.result });});  }    
+                .then((json) => {this.setState({isLoaded: true,items: json.result[0], });});  }    
                              
               handleclick9 = () => {
+                require('./Hidden.css');
                 fetch( `http://lcboapi.com/products?q=red+wine+france+grenache&access_key=MDoyNjlmZmU0OC1jNjUxLTExZTgtOWY5Mi0yYjJmNjhlYmVlM2M6bERDcURrS3ZtekVLWU1RYzBQQ2dWdEx6dGRlcjl3RnVhemlm`)
                 .then(res => res.json())
-                .then((json) => {this.setState({isLoaded: true,items: json.result });});  }    
+                .then((json) => {this.setState({isLoaded: true,items: json.result[0], });});  }    
                       
               handleclick10 = () => {
-                fetch( `http://lcboapi.com/products?q=white+wine+soft+riesling&access_key=MDoyNjlmZmU0OC1jNjUxLTExZTgtOWY5Mi0yYjJmNjhlYmVlM2M6bERDcURrS3ZtekVLWU1RYzBQQ2dWdEx6dGRlcjl3RnVhemlm`)
+                require('./Hidden.css');
+                fetch( `http://lcboapi.com/products?q=white+wine+sweet+riesling&access_key=MDoyNjlmZmU0OC1jNjUxLTExZTgtOWY5Mi0yYjJmNjhlYmVlM2M6bERDcURrS3ZtekVLWU1RYzBQQ2dWdEx6dGRlcjl3RnVhemlm`)
                 .then(res => res.json())
-                .then((json) => {this.setState({isLoaded: true,items: json.result});});  }  
+                .then((json) => {this.setState({isLoaded: true,items: json.result[0],});});  }  
             
               handleclick11 = () => {
+                require('./Hidden.css');
                 fetch( `http://lcboapi.com/products?q=red+wine+chile+pinot_noir&access_key=MDoyNjlmZmU0OC1jNjUxLTExZTgtOWY5Mi0yYjJmNjhlYmVlM2M6bERDcURrS3ZtekVLWU1RYzBQQ2dWdEx6dGRlcjl3RnVhemlm`)
                 .then(res => res.json())
-                .then((json) => {this.setState({isLoaded: true,items: json.result });});  }    
+                .then((json) => {this.setState({isLoaded: true,items: json.result[0], });});  }    
                                
               handleclick12 = () => {
+                require('./Hidden.css');
                 fetch( `http://lcboapi.com/products?q=red+wine+chile+cabernet&access_key=MDoyNjlmZmU0OC1jNjUxLTExZTgtOWY5Mi0yYjJmNjhlYmVlM2M6bERDcURrS3ZtekVLWU1RYzBQQ2dWdEx6dGRlcjl3RnVhemlm`)
                 .then(res => res.json())
-                .then((json) => {this.setState({isLoaded: true,items: json.result });});  }    
+                .then((json) => {this.setState({isLoaded: true,items: json.result[0], });});  }    
                           
             render (){
                 const { items } = this.state;
@@ -95,11 +107,10 @@ class Vinblanc extends Component{
             <button onClick={this.handleclick6}>Canada</button>
             
             <ul>
-            {items.map((e, i) => (
-              <li><p>Vin numero : {i+1}</p><p> Domaine :  {e.name}</p>
-              <p>Prix : {(e.price_in_cents/100).toFixed(2)} $</p> 
-              <img src={e.image_url} alt=":("/>
-              </li>))} 
+            <li><p>Vin numero : {1}</p><p> Domaine :  {items.name}</p>
+              <p>Prix : {(items.price_in_cents/100).toFixed(2)} $</p> 
+              <img src={items.image_url} alt=":("/>
+              </li>
               </ul>
         </div>
            );}
@@ -112,11 +123,10 @@ class Vinblanc extends Component{
       <button onClick={this.handleclick3}>Sec</button>
       
             <ul>
-            {items.map((e, i) => (
-              <li><p>Vin numero : {i+1}</p><p> Domaine :  {e.name}</p>
-              <p>Prix : {(e.price_in_cents/100).toFixed(2)} $</p> 
-              <img src={e.image_url} alt=":("/>
-              </li>))} 
+            <li><p>Vin numero : {1}</p><p> Domaine :  {items.name}</p>
+              <p>Prix : {(items.price_in_cents/100).toFixed(2)} $</p> 
+              <img src={items.image_url} alt=":("/>
+              </li>
               </ul>
         </div>
 
@@ -131,11 +141,10 @@ class Vinblanc extends Component{
         <button onClick={this.handleclick10}>Riesling</button>
        
               <ul>
-            {items.map((e, i) => (
-              <li><p>Vin numero : {i+1}</p><p> Domaine :  {e.name}</p>
-              <p>Prix : {(e.price_in_cents/100).toFixed(2)} $</p> 
-              <img src={e.image_url} alt=":("/>
-              </li>))} 
+              <li><p>Vin numero : {1}</p><p> Domaine :  {items.name}</p>
+              <p>Prix : {(items.price_in_cents/100).toFixed(2)} $</p> 
+              <img src={items.image_url} alt=":("/>
+              </li>
               </ul>
         </div>
   

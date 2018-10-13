@@ -25,7 +25,7 @@ class Winelist extends Component {
        .then((json) => {
         this.setState({
         isLoaded: true,
-        items: json.result
+        items: json.result[0],
            });
         });
        
@@ -48,11 +48,11 @@ class Winelist extends Component {
       	<div> 
         	
         <ul className ='Api'>
-          {items.map((e, i) => (
-            <li><p>Vin numero : {i+1}</p><p> Domaine :  {e.name}</p>
-            <p>Prix : {(e.price_in_cents/100).toFixed(2)} $</p> 
-            <img src={e.image_url} alt=":("/>
-            </li>))}
+          
+            <li><p>Vin numero : {1}</p><p> Domaine : </p>
+            <p>Prix : {(items.price_in_cents/100).toFixed(2)} $</p> 
+            <img src={items.image_url} alt=":("/>
+            </li>
         </ul>
 
 
