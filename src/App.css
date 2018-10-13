@@ -10,7 +10,7 @@ img.logo {
 
 .App-header {
   background-color: #282c34;
-  min-height: 6vh;
+  min-height: 20vmin;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +18,32 @@ img.logo {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+button.roulette {
 
+	margin: 10%;
+	border-radius: 100px;
+	height: 200px;
+	width: 200px;
+	border: 2px solid black;
+	box-shadow: 10px 5px 5px gray;
+	background-image:url(gregoire.jpg);
+	background-repeat:no-repeat;
+	background-size: contain;
+}
+
+button.roulette{
+	animation: roulette-spin infinite 2s linear;
+	
+  }
+
+  @keyframes  roulette-spin {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+  }
 a{
 margin-left: 10px;
 margin-right: 10px;
@@ -37,7 +62,16 @@ color:black;
 .App-link {
   color: #61dafb;
 }
+button{
+margin: 5%;
+border: solid 1px black;
+background-color: grey;
+color: white;
+padding: 5px;
+text-decoration:none;
+box-shadow: 10px 5px 5px black;
 
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -46,3 +80,7 @@ color:black;
     transform: rotate(360deg);
   }
 }
+ul{
+ visibility:hidden; 
+}
+
