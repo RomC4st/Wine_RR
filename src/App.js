@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import { Route, BrowserRouter, Switch, NavLink } from 'react-router-dom';
 import Winelist from "./Winelist";
 import './App.css';
@@ -8,8 +7,11 @@ import Vinblanc from './Vinblanc';
 import Roulette from './Roulette';
 
 
+
+
   
 class App extends Component {
+
   
   render() {
  
@@ -27,14 +29,17 @@ class App extends Component {
           <div>
             <Roulette />
             
+            
             <NavLink exact to="/red-Wine-Selection" >Rouge</NavLink >
             <NavLink to="/white-Wine-Selection"> Blanc </NavLink>
             <NavLink to="/pink-Wine-Selection"> Rosé </NavLink>
             <NavLink to="/bubble-Wine-Selection"> Petillant </NavLink>
+            <NavLink to='/'>Reset</NavLink>
 
             <Switch>
               <Route path="/white-Wine-Selection" component={Vinblanc} />
               <Route path="/red-Wine-Selection" component={Vinrouge} />
+              <Route path="/"/>
             </Switch>
 
 

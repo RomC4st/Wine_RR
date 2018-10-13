@@ -55,6 +55,16 @@ text-decoration:none;
 box-shadow: 10px 5px 5px black;
 }
 
+
+a:nth-child(6){
+  
+  border-radius: 60px;
+  min-height:100px;
+  width:60px;
+  background-color:red;
+
+
+}
 a:hover{
 color:black;
 }
@@ -82,5 +92,21 @@ box-shadow: 10px 5px 5px black;
 }
 ul{
  visibility:hidden; 
+
 }
 
+
+
+
+
+button.Reset{
+
+
+transform:translateX(350px);
+border-radius: 50px;
+height:60px;
+width:60px;
+background-color:red;
+
+
+}

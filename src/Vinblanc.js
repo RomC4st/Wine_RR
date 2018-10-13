@@ -67,7 +67,7 @@ class Vinblanc extends Component{
                 .then((json) => {this.setState({isLoaded: true,items: json.result });});  }    
                       
               handleclick10 = () => {
-                fetch( `http://lcboapi.com/products?q=red+wine+chile+sauvignon&access_key=MDoyNjlmZmU0OC1jNjUxLTExZTgtOWY5Mi0yYjJmNjhlYmVlM2M6bERDcURrS3ZtekVLWU1RYzBQQ2dWdEx6dGRlcjl3RnVhemlm`)
+                fetch( `http://lcboapi.com/products?q=white+wine+soft+riesling&access_key=MDoyNjlmZmU0OC1jNjUxLTExZTgtOWY5Mi0yYjJmNjhlYmVlM2M6bERDcURrS3ZtekVLWU1RYzBQQ2dWdEx6dGRlcjl3RnVhemlm`)
                 .then(res => res.json())
                 .then((json) => {this.setState({isLoaded: true,items: json.result});});  }  
             
