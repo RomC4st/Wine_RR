@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, BrowserRouter, Switch, NavLink } from 'react-router-dom';
 import Winelist from "./Winelist";
+import logo from './logo.svg';
 import './App.css';
 import Vinrouge from './Vinrouge';
 import Vinblanc from './Vinblanc';
@@ -21,13 +22,14 @@ class App extends Component {
             <div className="App">
 
         <header className="App-header">
+        <img src={logo} className="logo" alt="logo" />
 
           
            
         
         <BrowserRouter>
           <div>
-            <Roulette />
+            
             
             
             <NavLink exact to="/red-Wine-Selection" >Rouge</NavLink >
@@ -41,7 +43,7 @@ class App extends Component {
               <Route path="/red-Wine-Selection" component={Vinrouge} />
               <Route path="/"/>
             </Switch>
-
+            <Roulette />
 
             <Switch>
               <Route exact path="/:type-wine-selection" render={ (props) =><Winelist key={props.match.params.type} {...props}/>}/>

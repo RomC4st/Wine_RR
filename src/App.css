@@ -4,7 +4,7 @@
 
 img.logo {
   transform:scale(3);
-  animation: App-logo-spin infinite 1s linear;
+  animation: App-logo-spin infinite 10s linear;
   height: 20vmin;
 }
 
@@ -56,12 +56,14 @@ box-shadow: 10px 5px 5px black;
 }
 
 
-a:nth-child(6){
-  
-  border-radius: 60px;
-  min-height:100px;
+a:nth-child(5){
+  padding:22px 10px;
+  border-radius: 50px;
+  min-height:200px;
   width:60px;
   background-color:red;
+  font-size: 18px;
+  
 
 
 }
