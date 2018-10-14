@@ -56,17 +56,7 @@ box-shadow: 10px 5px 5px black;
 }
 
 
-a:nth-child(5){
-  padding:22px 10px;
-  border-radius: 50px;
-  min-height:200px;
-  width:60px;
-  background-color:red;
-  font-size: 18px;
-  
 
-
-}
 a:hover{
 color:black;
 }
@@ -100,8 +90,7 @@ li{
 
 
 
-
-button.Reset{
+.Reset{
 
 
 transform:translateX(350px);

@@ -39,6 +39,7 @@ class Winelist extends Component {
   
 
   render() {
+    console.log(this.state.x)
     
     const { items } = this.state;
   

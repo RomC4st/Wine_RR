@@ -20,6 +20,7 @@ class Roulette extends Component{
         this.setState({X:!this.state.X});
         window.location.reload()
         
+        
     }
 
     render(){
