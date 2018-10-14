@@ -12,12 +12,8 @@ import Roulette from './Roulette';
   
 class App extends Component {
 
-  state={
-    x:true
-  }
-
-  handleclick2 =() =>{
-    this.setState({X:!this.state.X});
+  
+  handleclick =() =>{
     window.location.reload()
     window.location.href='./'
     
@@ -44,7 +40,7 @@ class App extends Component {
             <NavLink to="/white-Wine-Selection"> Blanc </NavLink>
             <NavLink to="/pink-Wine-Selection"> Rosé </NavLink>
             <NavLink to="/bubble-Wine-Selection"> Petillant </NavLink>
-            <button className='Reset'onClick={this.handleclick2}>Reset</button>
+            <button className='Reset'onClick={this.handleclick}>Reset</button>
             <Switch>
               <Route path="/white-Wine-Selection" component={Vinblanc} />
               <Route path="/red-Wine-Selection" component={Vinrouge} />
