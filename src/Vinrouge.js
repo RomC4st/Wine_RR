@@ -128,8 +128,10 @@ render (){
               <li><p>Vin numero : {items.id}</p><p> Domaine :  {items.name}</p>
               <p>Prix : {(items.price_in_cents/100).toFixed(2)} $</p> 
               <img src={items.image_url} alt=":("/>
-              </li>
-              </ul>
+              
+              <hr/>
+              <a href={"http://www.lcbo.com/lcbo/cherche?searchTerm="+items.id} >Acheter {items.name}</a>
+              </li></ul>
         </div>
            );}
          
@@ -148,8 +150,10 @@ render (){
               <li><p>Vin numero : {items.id}</p><p> Domaine :  {items.name}</p>
               <p>Prix : {(items.price_in_cents/100).toFixed(2)} $</p> 
               <img src={items.image_url} alt=":("/>
-              </li>
-              </ul>
+              
+              <hr/>
+              <a href={"http://www.lcbo.com/lcbo/cherche?searchTerm="+items.id} >Acheter {items.name}</a>
+             </li> </ul>
         </div>
 
     );}
@@ -167,8 +171,10 @@ render (){
               <li><p>Vin numero : {items.id}</p><p> Domaine :  {items.name}</p>
               <p>Prix : {(items.price_in_cents/100).toFixed(2)} $</p> 
               <img src={items.image_url} alt=":("/>
-              </li>
-              </ul>
+              
+              <hr/>
+              <a href={"http://www.lcbo.com/lcbo/cherche?searchTerm="+items.id} >Acheter {items.name}</a>
+              </li></ul>
         </div>
   
       );}

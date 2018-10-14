@@ -34,13 +34,14 @@ class Winelist extends Component {
        
   
     }
-     
-  
+   
+   
   
 
   render() {
     
     const { items } = this.state;
+  
     
     //const itemsredalcohol = itemsred.filter((item,id) => item.alcohol_content === 1300)
     //const filter = items.filter((items) => items.origin ==="Chile, Region Not Specified");
@@ -55,6 +56,8 @@ class Winelist extends Component {
             <li><p>Vin numero : {items.id}</p><p> Domaine : </p>
             <p>Prix : {(items.price_in_cents/100).toFixed(2)} $</p> 
             <img src={items.image_url} alt=":("/>
+            <hr/>
+            <a href={"http://www.lcbo.com/lcbo/cherche?searchTerm="+items.id} >Acheter {items.name}</a>
             </li>
         </ul>
         
